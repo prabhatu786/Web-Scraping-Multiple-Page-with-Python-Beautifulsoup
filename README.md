@@ -52,6 +52,17 @@ response.status_code
 # step5:
 ## Now we are going to use pandas laibrary to creat Dataframe and store all dataframe in  the excel.
 
+crypto_df=pd.DataFrame({'coin':Name ,'price':Price, "Change_1h":Change_1h, "change_24h":change_24h ,
+            'change_7d':change_7d , 'volume_24h':volume_24h , ' market_capture': market_capture})
+            
+# Output in Excel
+
+crypto_df.to_excel('crypto_data.xlsx',index=False)
+
+![Screenshot 2021-08-14 185723](https://user-images.githubusercontent.com/59795901/129447766-b26dcc8f-785c-4c70-8a98-43c0b44618f5.png)
+
+
+
 
 
 
